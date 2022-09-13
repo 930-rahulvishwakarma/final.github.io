@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+
+/* CSS rules to specify families */
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box
+}
+html{
+    width: 100vw;
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+}
+.cantainer{
+    border: .2rem solid black;
+    box-sizing: border-box;
+    width: 100vw;
+    min-height: 100vh;
+    margin: 0 auto;
+    /* background-color: bisque; */
+}
+.frist{
+    /* border: .1rem solid red; */
+    /* padding-left: 3rem; */
+    /* width: 100vh; */
+    padding-right: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows:5rem;
+    grid-column-gap: 3rem; 
+    place-items: center;  
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,0.958420868347339) 100%);
+    color: white;
+}
+
+.frist-anchor{
+    padding-left: 1rem;
+    font-size: xx-large;
+    text-decoration: none;
+    color: antiquewhite;
+    justify-self:baseline
+}
+#frist{
+    padding-right: 1rem;
+    font-size: xx-large;
+    text-decoration: none;
+    color: antiquewhite;
+    justify-self: end;
+}
+/* second div */
+
+.second-cantainer{
+    border: .1rem solid white;
+    width: 100vw;
+    min-height:14rem ;
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,0.958420868347339) 100%);
+}
+ .second{
+    /* border: .2rem solid white; */
+    padding: .5rem;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+}
+#vip{
+    justify-self: start;
+}
+ #vip h2 {
+    width: 15rem;
+    height: 4rem;
+    /* padding: 1rem; */
+    padding-right: 1rem;
+    text-align: center;
+    /* border: .1rem solid black; */
+    font-weight: bolder;
+    font-size: 3rem;
+    background-color: bisque;
+    color: white;
+    border-radius: 5vh;
+}
+#input{
+    justify-self: end;
+}
+#input input[type="text"]{
+    width: 15rem;
+    height: 4rem;
+    /* padding: 1rem; */
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight:bolder;
+    border-style: none;
+    outline-style: none;
+    overflow: hidden;
+    background-color: transparent;
+}
+/* deposite and trade here */
+.secondTwo{
+    box-sizing: border-box;
+    width: 100%;
+   font-size: 2.4rem;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   padding-top: 1rem;
+}
+#deposit{
+    font-size: xx-large;
+    font-weight: bolder;
+    /* border: .1rem solid grey; */
+    margin: 1rem;
+    padding: 1rem;
+}
+#trade{
+    font-size: xx-large;
+    font-weight: bolder;
+    /* border: .2rem solid white; */
+    margin: 1rem;
+    padding: 1rem;
+}
+
+
+
+
+   /* cantainer-thrid */
+ 
+   /* slider */
+.third-cantainer{
+    width: 100vw;
+    height: 32rem;
+}
+
+.carousel-cell {
+    width: 50%;
+    min-height: 28rem;
+    border: 3px solid yellow;
+    background-color: lightyellow;
+  }
+
+  /* cell number */
+  .carousel-cell:before {
+    display: block;
+
+  }
+  .carousel{
+    padding: 1rem;
+    min-height: 30rem;
+    border: 2px solid red;
+  }
+  .carousel-cell{
+    margin: 0 3rem;
+    padding-left:.3rem;
+    font-size: 2rem;
+  }
+
+
+/* footer  */
+
+.footer{
+    width: 100vw;
+    min-height:15rem;
+    margin-top: 3rem;
+    /* outline: .1rem solid red; */
+    text-align: center;
+}
+#footer{
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    font-size: x-large;
+    font-weight: bolder;
+    color:rgb(88, 68, 68);
+}
+.footer h1{
+    padding-top: 1rem;
+    font-size: 2rem;
+}
+@media (max-width:300px){
+    #vip h2 {
+        width: 10rem;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: bolder;
+        color: black;
+    }
+    #vip{
+        justify-self: ;
+    }
+
+    #input input[type="text"]{
+        width: 13rem;
+        font-size: 2rem;
+    }
+
+}
+@media (max-width:344px){
+    
+  .carousel-cell{
+    width: 100%;
+    font-size: 2rem;
+  }
+  
+#footer{
+    font-size: 1rem;
+    font-weight: bolder;
+}
+.footer h1{
+    font-size: 2rem;
+}
+}
+ 
+@media (max-width:390px){
+    #footer{
+        
+        font-size: 1.7rem;
+        color: black;
+        font-weight: bolder;
+    }
+    .footer h1{
+        font-size: 3rem;
+    }   
+}
+@media (max-width:414px){
+    #footer{
+        
+        font-size: 1.6rem;
+        color: black;
+        font-weight: bolder;
+    }
+    .footer h1{
+        font-size: 3rem;
+    }
+}@media (max-width:280px){
+    .carousel-cell{
+        width: 100%;
+        font-size: 2rem;
+      }
+      #footer{
+        
+        font-size: 1.2rem;
+        color: black;
+        font-weight: bolder;
+    }
+    .footer h1{
+        font-size: 3rem;
+    }  
+}
+
+  
